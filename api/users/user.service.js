@@ -57,6 +57,7 @@ module.exports = {
       }
     );
   },
+  // update user
   updateUser: (data, callBack) => {
     pool.query(
       `update registration set firstName=?, lastName=?, gender=?, email=?, password=?, number=? where id = ?`,
